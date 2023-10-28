@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Signup from './Signup';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> hey
+          Edit <code>src/App.js</code> this is a test
         </p>
         <a
           className="App-link"
@@ -15,10 +16,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          This text is a hyperlink.
         </a>
       </header>
+      <Signup />
     </div>
+    
   );
 }
 
