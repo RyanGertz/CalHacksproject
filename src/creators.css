@@ -1,0 +1,16 @@
+.creator--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Gap between grid items */
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the grid horizontally */
+    padding: 20px;
+}
+
+.creator-card {
+    background-color: whitesmoke;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
