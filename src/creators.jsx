@@ -1,17 +1,40 @@
 import React from 'react'
-import "./creator.css"
+import "./creators.css"
 
-function creator() {
+function creators() {
     return(
         <div className="creator--container">
-            <div className="creator-card">1</div>
-            <div className="creator-card">2</div>
-            <div className="creator-card">3</div>
-            <div className="creator-card">4</div>
-            <div className="creator-card">5</div>
-            <div className="creator-card">6</div>
+            <div className="left-margin">
+                <div className="creator-card">
+                    <h3>NF</h3>
+                    <img src="./creator-images/NF.jpg"/>
+                </div>
+                <div className="creator-card">
+                    <h3>Morgan Wallen</h3>
+                    <img src="creator-images/Morgan-Wallen.jpg"/>
+                </div>
+                <div className="creator-card">
+                    <h3>Boris</h3>
+                    <img src="creator-images/Boris.jpg"/>  
+                </div>
+                <div className="creator-card">
+                    <h3>Blackwing</h3>
+                    <img src="creator-images/Blackwing.jpg"/>  
+                </div>
+                <div className="creator-card">
+                    <h3>The Smashing Pumpkins</h3>
+                    <img src="creator-images/The-Smashing-Pumpkins.jpg"/> 
+                </div>
+                <div className="creator-card">
+                    <h3>Dinosaur Jr.</h3>
+                    <img src="creator-images/Dinosaur-Jr.jpg"/>  
+                </div>
+            </div>
+            <div className="right-margin">
+                <button className="add-creator"> Add </button>
+            </div>
         </div>
     );
 }
 
-export default creator;
+export default creators;

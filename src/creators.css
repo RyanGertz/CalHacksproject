@@ -1,16 +1,54 @@
 .creator--container {
+<<<<<<< Updated upstream
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px; 
     width: 80%; 
     margin: 0 auto; 
+=======
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100vw; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the grid horizontally */
+>>>>>>> Stashed changes
     padding: 20px;
 }
 
 .creator-card {
-    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31%;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: cornflowerblue;
     color: white;
+    padding: 30px;
+    border: 1px solid white;
+    font-size: 40px;
+}
+
+.left-margin{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.right-margin{
+    width: 20vw;
+    top: 50%;
+    right: 10px;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.add-creator{
+    width: 35PX;
+    height: 35PX;
+}
+
+.img{
+    
 }
