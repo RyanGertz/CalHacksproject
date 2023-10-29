@@ -6,16 +6,21 @@
     margin: 0;
     padding: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* viewport height - takes full screen height */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh; 
     background-image: url('./images/audiogroph3.jpg');
-    background-size: cover; /* Cover the viewport */
+    background-size: cover; 
     background-repeat: no-repeat;
 }
 
-.Container {
+.Login .Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 10%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -33,56 +38,31 @@
 
 /* Typography */
 
-.Login h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    color: #004d40; /* Dark Green */
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-.Login h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-h5 {
-    font-size: 1.25em;
-}
-
-h6 {
-    font-size: 1em;
-}
 
 .Login p {
     margin-bottom: 20px;
     color: #666;
 }
 
-.Login a {
-    color: #007BFF; /* Blue */
+#root > div > div > div.Container > form > div.bottom-buttons > a {
+    color: #004d40; 
     text-decoration: none;
     transition: color 0.3s;
 }
 
-a:hover {
-    color: #0056b3; /* Darker Blue */
+
+.Login .NavContainer{
+    margin-bottom: 100px;
+}
+.Login a:hover {
+    color: #00695c; 
 }
 
 /* Buttons */
 
 .Login button {
-    display: inline-block;
     font-family: "Nunito", monospace;
-    padding: 15px 25px;
+    padding: 10px 15px;
     color: #fff;
     background-color: #004d40; /* Green */
     border: none;
@@ -108,19 +88,12 @@ a:hover {
 
 /* Utility Classes */
 
-.text-center {
+.Login .text-center {
     text-align: center;
 }
 
-.mt-20 {
-    margin-top: 20px;
-}
 
-.mb-20 {
-    margin-bottom: 20px;
-}
-
-.Login label {
+.Signup label {
     display: block;
     margin-bottom: 5px;
     color: #004d40; /* Dark Green */
@@ -131,7 +104,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea,
-.Login select {
+.Signup select {
     width: 85%;
     padding: 10px;
     margin-bottom: 15px;
@@ -151,4 +124,7 @@ select:focus {
     outline: none;
 }
 
-/* did this change */
+.Signup .bottom-buttons {
+    display: flex;
+    flex-direction: column;
+}

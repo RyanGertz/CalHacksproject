@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import Navbar from './Navbar';
 
 function Login() {
     const [formData, setFormData] = useState({
@@ -23,31 +24,38 @@ function Login() {
 
     return (
         <div className='Login'> 
-            <div className="Container">
-            <h2>Login To Your Account</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Username or Email:</label>
-                    <input 
-                        type="text" 
-                        name="username" 
-                        value={formData.username} 
-                        onChange={handleChange} 
-                    />
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        value={formData.password} 
-                        onChange={handleChange} 
-                    />
-                </div>
-                <button type="submit">Log In</button>
-            </form>
+        <div className='NavContainer'>
+            <Navbar />
         </div>
-    </div>
+            <div className="Container">
+                <form onSubmit={handleSubmit}>
+                <h2>Log In To Your Account</h2>
+                    <div>
+                        <label>Username / Email:</label>
+                        <input 
+                            type="text" 
+                            name="username" 
+                            value={formData.username} 
+                            onChange={handleChange} 
+                        />
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input 
+                            type="password" 
+                            name="password" 
+                            value={formData.password} 
+                            onChange={handleChange} 
+                        />
+                    </div>
+                    <div className='bottom-buttons'>
+                        <button type="submit">Log In</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
     );
 
 }
