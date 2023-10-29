@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Signup from './Signup';
 import Login from './Login';
 import Creators from './creators';
+import Events from './Events'
 
 
 
@@ -21,6 +22,8 @@ function App() {
           <Route path="/signup" activeClassName="active" element={ <Signup /> }/>
           <Route path="/login" activeClassName="active" element={ <Login /> }/>
           <Route path="/creators" activeClassName="active" element={ <Creators /> }/> 
+          <Route path="/events" activeClassName="active" element={ <Events /> }/> 
+
         </Routes>
       </BrowserRouter>
     </div>

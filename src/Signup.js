@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Signup.css"
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 
 function Signup() {
@@ -10,6 +10,8 @@ function Signup() {
         password: ''
     });
 
+    const navigation = useNavigate()
+
     const handleChange = e => {
         setFormData({
             ...formData,
@@ -17,10 +19,24 @@ function Signup() {
         });
     };
 
+    const resetForm = () => {
+        setFormData ({
+            username: '',
+            email: '',
+            password: ''
+        })
+    }
+
     const handleSubmit = e => {
         e.preventDefault();
         // Connects to backend here I think
-        console.log(formData);
+        if (formData.username.length > 1 && formData.email.length >1 && formData.password.length > 1){
+            navigation("/")
+        }
+        
+
+        resetForm();
+        
     };
 
     return (
@@ -29,6 +45,7 @@ function Signup() {
             <Navbar />
         </div>
             <div className="Container">
+
                 <form onSubmit={handleSubmit}>
                 <h2>Sign Up For An Account</h2>
                     <div>
@@ -44,7 +61,7 @@ function Signup() {
                         <label>Email:</label>
                         <input 
                             type="text" 
-                            name="username" 
+                            name="email" 
                             value={formData.email} 
                             onChange={handleChange} 
                         />
