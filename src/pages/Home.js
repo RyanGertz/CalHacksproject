@@ -1,14 +1,61 @@
 import './Home.css';
-import { useRef } from 'react'
+import { useRef } from 'react';
+import  one  from '../images/one.jpg';
+import two from '../images/two.jpg';
+import three from '../images/three.jpg';
+import four from '../images/four.jpg';
+import five from '../images/five.jpg';
+import six from '../images/six.jpg';
+import seven from '../images/seven.jpg';
+import eight from '../images/eight.jpg';
+import nine from '../images/nine.jpg';
+import { NavLink } from 'react-router-dom';
 
 export default function Home(){
+    const scroller = useRef()
+
+    const handleScroll = (direction) => {
+        const scrollAmount = 350;
+        const reel = scroller.current;
+    
+        if (direction === 'left') {
+          reel.scrollBy({
+            top: 0,
+            left: -scrollAmount,
+            behavior: 'smooth'
+          });
+        } else {
+          reel.scrollBy({
+            top: 0,
+            left: scrollAmount,
+            behavior: 'smooth'
+          });
+        }
+      };
+
     return(
         <div className="Home">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sodales nunc, vitae dignissim nisl. Duis vulputate mattis enim, et laoreet lacus pellentesque nec. Nunc dignissim justo in mi cursus, a semper ante egestas. Donec ut turpis arcu. Nulla vehicula augue a justo scelerisque ornare. Ut accumsan commodo volutpat. Vestibulum placerat nunc eu egestas viverra. Aliquam venenatis orci magna, vitae porta odio bibendum nec. Fusce faucibus dictum enim, sit amet molestie odio vehicula sed. Aenean faucibus viverra massa non varius. Vestibulum rutrum at ex eu egestas. Donec quam erat, hendrerit vitae pellentesque id, elementum quis magna. Sed magna arcu, vulputate vitae volutpat vel, ultricies at lacus.
-
-Duis lacinia placerat ex, non ultrices orci maximus vel. Nunc consequat commodo ligula, quis placerat justo vestibulum dapibus. Etiam rutrum rutrum ex, eget dictum ligula consequat interdum. Curabitur placerat leo vel mi tempus, vel fringilla nisi ullamcorper. In at ipsum eu risus mollis ornare. Mauris accumsan nisl nec neque pellentesque tincidunt. Maecenas bibendum risus ac justo auctor ullamcorper sit amet ut ante. Praesent commodo elit vel sollicitudin sollicitudin. Nam lectus justo, hendrerit eu ipsum semper, semper posuere quam. Donec ex magna, commodo in sapien at, feugiat condimentum sem.</p>
-
-            <div className='Scroll'>
+            <div className='Text'>
+                <p className='Bio'>Welcome to our project! With the rise of NFT's, it has never been easier for artists to share memorabilia to their fans, and fans to collect something special from an event. Our projet aims to connect fans with artists to collect special rewards for attending in person events.</p>
+                <NavLink className='Link' to='/signup'>Sign up today!</NavLink>
+            </div>
+            <div className='Scroll-Container'>
+                <span>NFT's from some of our artists:</span>
+                <div className='Scroll' ref={scroller}>
+                    <img src={one} alt='nft1'/>
+                    <img src={two} alt='nft2'/>
+                    <img src={three} alt='nft3'/>
+                    <img src={four} alt='nft4'/>
+                    <img src={five} alt='nft5'/>
+                    <img src={six} alt='nft6'/>
+                    <img src={seven} alt='nft7'/>
+                    <img src={eight} alt='nft8'/>
+                    <img src={nine} alt='nft9'/>
+                </div>
+                <div className='Scroll-Text'>
+                    <button onClick={() => handleScroll('left')}>Left</button>
+                    <button onClick={() => handleScroll('right')}>Right</button>
+                </div>
             </div>
         </div>
     )
