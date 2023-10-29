@@ -11,7 +11,7 @@ function Navbar() {
                 <li><NavLink to="/creators">Creators</NavLink></li>
                 <li><NavLink to="/nfts">NFTs</NavLink></li>
                 <li><NavLink to="/events">My Events</NavLink></li>
-                <li><NavLink to="/account">Login/Sign-up</NavLink></li>
+                <li><NavLink to="/Signup">Login/Sign-up</NavLink></li>
             </ul>
         </nav>
     </div>
