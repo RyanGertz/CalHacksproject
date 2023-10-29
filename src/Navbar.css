@@ -1,7 +1,7 @@
 
 .navbar {
     background-color: #007654;
-    color: whitesmoke;
+    color: whitesmoke ; 
     display: flex;
     justify-content: space-between;
     align-items: center;

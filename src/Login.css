@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* viewport height - takes full screen height */
-    background-image: url('C:/Users/micha/OneDrive/Pictures/audiogroph3.jpg');
+    background-image: url('./images/audiogroph3.jpg');
     background-size: cover; /* Cover the viewport */
     background-repeat: no-repeat;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Signup.css"
 import { NavLink } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function Signup() {
     const [formData, setFormData] = useState({
@@ -24,10 +25,12 @@ function Signup() {
 
     return (
         <div className='Signup'> 
+        <div className='NavContainer'>
+            <Navbar />
+        </div>
             <div className="Container">
-
-                <h2>Login To Your Account</h2>
                 <form onSubmit={handleSubmit}>
+                <h2>Sign Up For An Account</h2>
                     <div>
                         <label>Username:</label>
                         <input 
@@ -57,7 +60,7 @@ function Signup() {
                     </div>
                     <div className='bottom-buttons'>
                         <button type="submit">Sign Up</button>
-                        <a><NavLink to='/Login'>I Already Have An Account</NavLink></a>
+                        <NavLink to='/Login'>I Already Have An Account</NavLink>
                     </div>
 
                 </form>
