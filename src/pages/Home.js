@@ -10,9 +10,12 @@ import seven from '../images/seven.jpg';
 import eight from '../images/eight.jpg';
 import nine from '../images/nine.jpg';
 import { NavLink } from 'react-router-dom';
+import Navbar from '../Navbar';
 
 export default function Home(){
     const scroller = useRef()
+
+   
 
     const handleScroll = (direction) => {
         const scrollAmount = 350;
@@ -35,9 +38,9 @@ export default function Home(){
 
     return(
         <div className="Home">
+            <Navbar />
             <div className='Text'>
-                <p className='Bio'>Welcome to our project! With the rise of NFT's, it has never been easier for artists to share memorabilia to their fans, and fans to collect something special from an event. Our projet aims to connect fans with artists to collect special rewards for attending in person events.</p>
-                <NavLink className='Link' to='/signup'>Sign up today!</NavLink>
+                <p className='Bio'>Welcome to Audiogroph! With the rise of NFT's, it has never been easier for artists to share memorabilia to their fans, and fans to collect something special from an event. Our projet aims to connect fans with artists to collect special rewards for attending in person events.</p>
             </div>
             <div className='Scroll-Container'>
                 <span>NFT's from some of our artists:</span>
@@ -57,6 +60,7 @@ export default function Home(){
                     <button onClick={() => handleScroll('right')}>Right</button>
                 </div>
             </div>
+            <NavLink className='Link' to='/signup'>Join Us</NavLink>
         </div>
     )
 }
