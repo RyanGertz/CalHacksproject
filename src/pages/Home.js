@@ -60,7 +60,10 @@ export default function Home(){
                     <button onClick={() => handleScroll('right')}>Right</button>
                 </div>
             </div>
-            <NavLink className='Link' to='/signup'>Join Us</NavLink>
+            <div className='LinkContainer'>
+                <NavLink className='Link' to='/signup'>Join Us</NavLink>
+            </div>
+            
         </div>
     )
 }

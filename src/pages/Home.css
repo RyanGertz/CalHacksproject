@@ -1,5 +1,7 @@
 
-
+.Home{
+    min-height: 100vh;
+}
 .Home p{
     margin-top: 3%;
 }
@@ -35,9 +37,14 @@
     border-color: #007654;
     background-color: #007654;
     color: white;
-    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    margin-top: 20%;
-    
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);    
+    margin-top: 10%;
+}
+
+.Home .LinkContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .Home .Scroll-Container{
