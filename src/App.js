@@ -20,6 +20,7 @@ function App() {
           <Route path="/" activeClassName="active" element={ <Home /> }/>
           <Route path="/signup" activeClassName="active" element={ <Signup /> }/>
           <Route path="/login" activeClassName="active" element={ <Login /> }/>
+          <Route path="/creators" activeClassName="active" element={ <Creators /> }/>
         </Routes>
       </BrowserRouter>
     </div>
