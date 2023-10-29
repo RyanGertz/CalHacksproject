@@ -1,0 +1,12 @@
+input{
+    width: 200px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}

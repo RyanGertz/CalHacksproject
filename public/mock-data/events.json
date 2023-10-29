@@ -1,0 +1,52 @@
+{
+    "events": [
+        {
+            "location": "San Francisco",
+            "artist name": "Drake",
+            "event name": "California Tour",
+            "event date": "10/30/23"
+        },
+        {
+            "location": "San Francisco",
+            "artist name": "Adele",
+            "event name": "Hello Tour",
+            "event date": "10/30/23"
+        },
+        {
+            "location": "Los Angeles",
+            "artist name": "Taylor Swift",
+            "event name": "Red Revival Tour",
+            "event date": "11/02/23"
+        },
+        {
+            "location": "San Diego",
+            "artist name": "The Weeknd",
+            "event name": "Blinding Lights Tour",
+            "event date": "11/05/23"
+        },
+        {
+            "location": "Sacramento",
+            "artist name": "Ed Sheeran",
+            "event name": "Shape of You Tour",
+            "event date": "11/08/23"
+        },
+        {
+            "location": "San Jose",
+            "artist name": "Billie Eilish",
+            "event name": "Happier Than Ever Tour",
+            "event date": "11/10/23"
+        },
+        {
+            "location": "Oakland",
+            "artist name": "Bruno Mars",
+            "event name": "24k Magic Tour",
+            "event date": "11/15/23"
+        },
+        {
+            "location": "Anaheim",
+            "artist name": "Ariana Grande",
+            "event name": "Sweetener World Tour",
+            "event date": "11/18/23"
+        }
+    ]
+}
