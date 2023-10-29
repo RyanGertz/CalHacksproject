@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Search.css'
 
 async function fetchData() {
     const response = await fetch('/mock-data/events.json');
@@ -36,6 +37,7 @@ export default function SearchBar() {
         value={query}
         onChange={e => setQuery(e.target.value)}
       />
+      <div className='Search'>
       <ul>
         {results.map((event, index) => (
           <li key={index}>
@@ -43,6 +45,7 @@ export default function SearchBar() {
           </li>
         ))}
       </ul>
+      </div>
     </div>
   );
 }

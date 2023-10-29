@@ -2,11 +2,28 @@ input{
     width: 200px;
 }
 
-ul {
+.Events ul {
+    font-family: "Nunito", monospace;
+    font-size: medium;
     display: flex;
+    color: #004d40;
+    gap: 10px;
 }
 
-li {
+.Events li {
     list-style: none;
     margin-bottom: 10px;
+    border-style: solid;
 }
+
+.Events{
+    font-family: "Nunito", monospace;
+    font-size: medium;
+    display: flex;
+    color: #004d40;
+    display: flex;
+    justify-content: center;
+}
+
+
+
