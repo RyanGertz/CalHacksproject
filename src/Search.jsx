@@ -16,11 +16,12 @@ export default function SearchBar() {
   }, []);
 
   useEffect(() => {
+    
     if (query === '') {
       setResults([]);
       return;
     }
-
+    console.log("data: ", data)
     const filtered = data.filter(event => 
       event.location.toLowerCase().includes(query.toLowerCase())
     );
