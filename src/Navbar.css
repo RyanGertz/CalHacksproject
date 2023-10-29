@@ -1,0 +1,41 @@
+
+.navbar {
+    background-color: #007654;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 13;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 14rem;
+}
+
+.navbar li {
+    padding: 10px;
+}
+
+.navbar li:hover {
+    color: red;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar nav a.active{
+    text-decoration: underline;
+}
+
+.home{
+    font-size: medium;
+}

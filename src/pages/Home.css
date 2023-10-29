@@ -1,7 +1,95 @@
-.Home{
-    display: flexbox;
-}
+
 
 .Home p{
-    margin-top: 9%;
+    margin-top: 3%;
 }
+
+.Home button{
+    border-radius: 4px;
+    border: none;
+    transition-duration: 0.4s;
+    background-color: #007654;
+    color:whitesmoke;
+    padding: 8px;
+    font-weight: 700px;
+
+}
+
+.Home button:hover{
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    
+}
+.Home .Scroll {
+    display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-style: solid;
+  }
+
+.Home .Link{
+    border: solid;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 3px;
+    border-color: #007654;
+    background-color: #007654;
+    color: white;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    margin-top: 20%;
+    
+}
+
+.Home .Scroll-Container{
+    margin-top: 4%;
+    text-align: left;
+}
+
+.Home .Scroll-Text{
+    width: 90%;
+  display: flex;
+  justify-content: space-between; 
+  padding: 0     60px; 
+  margin-top: 5px;
+}
+
+.Home span{
+    font-weight: bold;
+    margin-left: 1%;
+
+}
+  
+.Home .Scroll img {
+    flex-shrink: 0;
+    max-width: 300px;  
+    max-height: 200px;  
+    margin-right: 16px;  
+  }
+
+.Home .Text{
+    text-align: center;
+}
+
+
+
+.Home .Link:hover{
+    text-decoration: underline;
+}
+
+  /* For the entire page */
+.Home ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* color of the tracking area */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;  /* color of the scroll thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;  /* color of the scroll thumb on hover */
+  }
+  
