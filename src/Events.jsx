@@ -4,14 +4,12 @@ import Navbar from "./Navbar";
 
 export default function Events() {
     return(
-<<<<<<< Updated upstream
-        <div>
-            <Navbar/>
-=======
         <div className="Events">
->>>>>>> Stashed changes
-            <h1>Events</h1>
-            <SearchBar />
+            <Navbar/>
+             <h1>Events</h1>
+             <div className="Results">
+                <SearchBar />   
+            </div>
         </div>
     )
 }

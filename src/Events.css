@@ -2,7 +2,7 @@ input{
     width: 200px;
 }
 
-.Events ul {
+.Results ul {
     font-family: "Nunito", monospace;
     font-size: medium;
     display: flex;
@@ -10,17 +10,22 @@ input{
     gap: 10px;
 }
 
-.Events li {
+.Results li {
     list-style: none;
     margin-bottom: 10px;
     border-style: solid;
 }
 
-.Events{
+/* .Events{
     font-family: "Nunito", monospace;
     font-size: medium;
     display: flex;
     color: #004d40;
+    display: flex;
+    justify-content: center;
+} */
+
+.Results{
     display: flex;
     justify-content: center;
 }
