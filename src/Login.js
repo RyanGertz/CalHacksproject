@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './Login.css';
 import Navbar from './Navbar';
+import { useNavigate } from 'react-router-dom';
+import { AccountContext } from './AccountContext';
+
+
 
 function Login() {
+
+    const { setAccountBool } = useContext(AccountContext);
+
     const [formData, setFormData] = useState({
         username: '',
         email: '',
@@ -16,10 +23,21 @@ function Login() {
         });
     };
 
+    const navigation = useNavigate()
+
     const handleSubmit = e => {
         e.preventDefault();
         // Connects to backend here I think
         console.log(formData);
+       
+        setFormData({
+            username: '',
+            email: '',
+            password: ''
+        })  
+        setAccountBool(true)
+        navigation('/events')
+
     };
     
 

@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import "./Signup.css"
 import { NavLink, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
+import { AccountContext } from './AccountContext';
 
 function Signup() {
+
+    const { setAccountBool } = useContext(AccountContext);
+
     const [formData, setFormData] = useState({
         username: '',
         email: '',
@@ -31,6 +35,7 @@ function Signup() {
         e.preventDefault();
         // Connects to backend here I think
         if (formData.username.length > 1 && formData.email.length >1 && formData.password.length > 1){
+            setAccountBool(true)
             navigation("/")
         }
         
