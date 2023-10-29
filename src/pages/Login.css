@@ -1,4 +1,4 @@
-.Signup {
+.Login {
     font-family: "Nunito", monospace;
     line-height: 1.6;
     color: #333;
@@ -33,7 +33,7 @@
 
 /* Typography */
 
-.Signup h1, h2, h3, h4, h5, h6 {
+.Login h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     color: #004d40; /* Dark Green */
 }
@@ -42,7 +42,7 @@ h1 {
     font-size: 2.5em;
 }
 
-.Signup h2 {
+.Login h2 {
     font-size: 2em;
 }
 
@@ -62,27 +62,27 @@ h6 {
     font-size: 1em;
 }
 
-.Signup p {
+.Login p {
     margin-bottom: 20px;
     color: #666;
 }
 
-.Signup a {
-    /* display: block; */
-    color: #004d40; /* Blue */
+.Login a {
+    color: #007BFF; /* Blue */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #00695c; 
+    color: #0056b3; /* Darker Blue */
 }
 
 /* Buttons */
 
-.Signup button {
+.Login button {
+    display: inline-block;
     font-family: "Nunito", monospace;
-    padding: 10px 15px;
+    padding: 15px 25px;
     color: #fff;
     background-color: #004d40; /* Green */
     border: none;
@@ -92,7 +92,7 @@ a:hover {
 }
 
 
-.Signup button:hover {
+.Login button:hover {
     background-color: #00695c; /* Lighter Green */
 }
 
@@ -100,7 +100,7 @@ a:hover {
 
 /* Misc */
 
-.Signup hr {
+.Login hr {
     border: 0;
     border-top: 1px solid #e0e0e0;
     margin: 20px 0;
@@ -120,7 +120,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.Signup label {
+.Login label {
     display: block;
     margin-bottom: 5px;
     color: #004d40; /* Dark Green */
@@ -149,9 +149,4 @@ textarea:focus,
 select:focus {
     border-color: #007BFF; /* Blue */
     outline: none;
-}
-
-.bottom-buttons {
-    display: flex;
-    flex-direction: column;
 }
